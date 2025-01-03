@@ -89,3 +89,4 @@ If you have ideas for new features, please submit a ticket in our ideas reposito
 
 © 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
 <https://getkirby.com>
+# PersonalBlog
