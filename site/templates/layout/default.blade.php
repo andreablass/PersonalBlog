@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    @yield('content')
+    <main class="pt-16">
+        {{ $slot }}
+    </main>  
 </body>
-
 </html>

@@ -1,6 +1,4 @@
-@extends('layouts.default')
-@section('content')
-    <div class="flex h-screen w-screen items-center justify-center">
-        <img class="w-1/3 max-w-[250px]" src="{{ url('/images/beeb.png') }}" alt="Beeb" />
-    </div>
-@endsection
+<x-layout.default :site="$site" :page="$page">
+    <h1>Hello, Blade!</h1>
+</x-layout.default>
+
