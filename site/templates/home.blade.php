@@ -3,7 +3,7 @@
         <div class="md:col-span-2">
             <section>
                 <h1 class="text-3xl font-bold text-gray-800">{{ $page->title() }}</h1>
-                <p class="text-lg text-gray-600 mt-2">{{ $page->subtitle() }}</p>
+                <p class=" text-gray-600 mt-2">{{ $page->subtitle() }}</p>
             </section>
 
             <section class="mt-8">

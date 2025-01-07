@@ -1,0 +1,34 @@
+title: Article
+
+fields:
+  title:
+    label: Title
+    type: text
+    required: true
+
+  subtitle:
+    label: Subtitle
+    type: text
+    required: false
+
+  cover:
+    label: Cover Image
+    type: files
+    max: 1
+
+  content:
+    label: Content
+    type: textarea
+    size: large
+
+  tags:
+    label: Tags
+    type: tags
+    required: false
+
+  categories:
+    label: Categories
+    type: checkboxes
+    options:
+      - Tech
+      - Lifestyle
