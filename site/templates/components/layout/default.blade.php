@@ -12,8 +12,9 @@
 </head>
 
 <body>
+    <x-navigation.header title="Header" />
     <main class="pt-16">
         {{ $slot }}
-    </main>  
+    </main>
 </body>
 </html>

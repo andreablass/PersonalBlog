@@ -1,5 +1,5 @@
 <x-layout.default :site="$site" :page="$page">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+    <div class="grid grid-cols-1  md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
         <div class="md:col-span-2">
             <section>
                 <h1 class="text-3xl font-bold text-gray-800">{{ $page->title() }}</h1>
@@ -10,7 +10,7 @@
                 <h2 class="text-2xl font-semibold text-gray-700">Latest Blog Posts</h2>
                 <ul class="mt-4 space-y-4">
                     <li class="border-b pb-4">
-                    <!-- post recientes -->
+                        <!-- post recientes -->
                     </li>
                 </ul>
             </section>

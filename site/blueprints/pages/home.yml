@@ -17,4 +17,17 @@ columns:
           about_text:
             type: textarea
             label: About the Blog
+      categories:
+        type: fields
+        fields:
+          tags:
+            type: tags
+            label: Categories
+            placeholder: Add categories
+      files:
+        type: files
+        label: Attachments
+
+
+
 

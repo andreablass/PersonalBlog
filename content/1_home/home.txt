@@ -6,4 +6,8 @@ About-text: Hola acerca del blog
 
 ----
 
+Tags: code
+
+----
+
 Uuid: sm3xEhovFJsimsbQ
