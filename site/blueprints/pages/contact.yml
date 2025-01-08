@@ -1,0 +1,31 @@
+title: Contact
+
+fields:
+  address:
+    label: Address
+    type: writer
+    inline: true
+
+  phone:
+    label: Phone
+    type: tel
+
+  email:
+    label: Email
+    type: email
+    
+  social:
+    label: Contact Me
+    type: structure
+    columns:
+      platform: true
+      url: true
+    fields:
+      platform:
+        label: Platform
+        type: text
+        width: 1/2
+      url:
+        label: URL
+        type: url
+        width: 1/2 

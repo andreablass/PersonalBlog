@@ -1,3 +1,105 @@
 title: Site
-preset: pages
-unlisted: true
+tabs:
+
+  #Pages
+  articles:
+    label: Articles
+    icon: dashboard
+    sections:
+
+      drafts:
+        headline: Drafts
+        type: pages
+        layout: list
+        status: draft
+        image:
+          cover: true
+          ratio: 16/9
+
+        templates:
+          - article
+          - content
+
+      public:
+        headline: Articles
+        type: pages
+        layout: cards
+        status: published
+        image:
+          cover: true
+          ratio: 16/9
+        templates:
+          - article
+
+      unlisted:
+        headline: Others
+        type: pages
+        layout: cards
+        status: published
+        image:
+          cover: true
+          ratio: 16/9
+        templates:
+          - content
+          - home
+
+  #Pages
+  others:
+    label: Others
+    icon: dashboard
+    sections:
+
+      drafts:
+        headline: Drafts
+        type: pages
+        layout: list
+        status: draft
+        image:
+          cover: true
+          ratio: 16/9
+
+        templates:
+          - article
+          - content
+          - contact
+
+      public:
+        headline: Articles
+        type: pages
+        layout: cards
+        status: published
+        image:
+          cover: true
+          ratio: 16/9
+        templates: article
+
+      archived:
+        headline: Others
+        type: pages
+        layout: cards
+        status: published
+        image:
+          cover: true
+          ratio: 16/9
+        templates:
+          - contact
+
+  settings:
+    label: Configuration
+    icon: settings
+    columns:
+      content:
+        type: fields
+        width: 2/3
+        fields:
+          categories:
+            label: Categories
+            type: tags
+
+      sidebar:
+        sticky: true
+        width: 1/3
+        sections:
+          files:
+            type: files
+

@@ -21,14 +21,10 @@ fields:
     type: textarea
     size: large
 
-  tags:
-    label: Tags
-    type: tags
-    required: false
-
   categories:
     label: Categories
-    type: checkboxes
+    type: tags
+    accept: options
     options:
-      - Tech
-      - Lifestyle
+      type: query
+      query: site.categories.split
