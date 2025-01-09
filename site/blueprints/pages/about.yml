@@ -1,0 +1,40 @@
+title: About
+
+fields:
+  title:
+    label: Title
+    type: text
+    required: true
+
+  subtitle:
+    label: Subtitle
+    type: text
+    required: false
+
+  content:
+    label: Content
+    type: textarea
+    required: true
+    size: large
+
+  image:
+    label: Cover Image
+    type: files
+    max: 1
+    required: false
+
+  social:
+    label: Contact Me
+    type: structure
+    columns:
+      platform: true
+      url: true
+    fields:
+      platform:
+        label: Platform
+        type: text
+        width: 1/2
+      url:
+        label: URL
+        type: url
+        width: 1/2 
