@@ -1,0 +1,94 @@
+Title: 5 More Ways to Reduce Anxiety Before a Cello Performance…
+
+----
+
+Subtitle: In my last article about ways to reduce anxiety before a cello performance
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "text": "<p><strong>Record A Video Performance and Listen to it with Critical Ears.</strong></p><p>Recording yourself playing and listening back with critical ears is one of the most powerful things you can do for yourself as a musician. When you are busy playing, you aren’t always focused on how you sound. You may be distracted by physical or mental concerns.</p><p>As you learn a piece, record parts of it and listen back. You can do this alone or with your teacher for more insights. When you are ready, record the whole piece wearing the clothes you are going to wear for your live performance.</p><p>You may need to record the piece multiple times until you are satisfied with the sound.</p>"
+        },
+        "id": "1dcec233-fcc6-4d55-adb5-c9d0210cab9e",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://H5DPeTj5aw71Ax6e"
+            ],
+            "src": "https://unsplash.com/es/fotos/una-vela-en-un-vaso-k1Nyy_8H_aU",
+            "alt": "Anxiety",
+            "caption": "",
+            "link": "",
+            "ratio": "",
+            "crop": "true"
+        },
+        "id": "8da04ea8-6919-41fa-929e-ace556a69184",
+        "isHidden": false,
+        "type": "image"
+    },
+    {
+        "content": {
+            "level": "h6",
+            "text": "<strong>Wear Comfortable Performance Clothing</strong>"
+        },
+        "id": "9649e809-b31f-4957-89fb-deb83139d988",
+        "isHidden": false,
+        "type": "heading"
+    }
+]
+
+----
+
+Categories: Healthy, Music
+
+----
+
+Cover:
+
+- 
+  id: img_20241228_110421.jpg
+  image:
+    back: pattern
+    color: orange-500
+    cover: false
+    icon: image
+    url: >
+      http://kirby-blog.test/media/pages/coding/b6798bd440-1736378629/img_20241228_110421.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://kirby-blog.test/media/pages/coding/b6798bd440-1736378629/img_20241228_110421-38x.jpg
+      38w,
+      http://kirby-blog.test/media/pages/coding/b6798bd440-1736378629/img_20241228_110421-76x.jpg
+      76w
+  info: ""
+  link: >
+    /pages/coding/files/img_20241228_110421.jpg
+  sortable: true
+  text: img_20241228_110421.jpg
+  uuid: file://H5DPeTj5aw71Ax6e
+  dragText: '(image: img_20241228_110421.jpg)'
+  filename: img_20241228_110421.jpg
+  type: image
+  url: >
+    http://kirby-blog.test/media/pages/coding/b6798bd440-1736378629/img_20241228_110421.jpg
+
+----
+
+Content: First article
+
+----
+
+Uuid: SIrktLk1JOlB9U4H
+
+----
+
+Author: Andrea

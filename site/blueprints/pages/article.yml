@@ -9,17 +9,11 @@ fields:
   subtitle:
     label: Subtitle
     type: text
-    required: false
-
-  cover:
-    label: Cover Image
-    type: files
-    max: 1
-
-  content:
-    label: Content
-    type: textarea
-    size: large
+    required: true
+    
+  blocks:
+    type: blocks
+    pretty: true
 
   categories:
     label: Categories
