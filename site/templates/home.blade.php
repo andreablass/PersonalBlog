@@ -10,7 +10,7 @@
                 <h2 class="text-2xl font-semibold text-gray-700">Latest Blog Posts</h2>
                 <ul class="mt-4 space-y-4">
                     <li class="border-b pb-4">
-                        <!-- post recientes -->
+                        <!-- articulos recientes -->
                     </li>
                 </ul>
             </section>
