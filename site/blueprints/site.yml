@@ -5,85 +5,69 @@ tabs:
   articles:
     label: Articles
     icon: dashboard
-    sections:
+    columns:
 
-      drafts:
-        headline: Drafts
-        type: pages
-        layout: list
-        status: draft
-        image:
-          cover: true
-          ratio: 16/9
+      published:
+        width: 2/3
+        sections:
+          public:
+            headline: Articles
+            type: pages
+            layout: cards
+            status: published
+            image:
+              cover: true
+              ratio: 16/9 
+            templates: article
 
-        templates:
-          - article
-          - content
-
-      public:
-        headline: Articles
-        type: pages
-        layout: cards
-        status: published
-        image:
-          cover: true
-          ratio: 16/9
-        templates:
-          - article
-
-      unlisted:
-        headline: Others
-        type: pages
-        layout: cards
-        status: published
-        image:
-          cover: true
-          ratio: 16/9
-        templates:
-          - content
-          - home
+      articles_drafts:
+        width: 1/3
+        sections:
+          drafts:
+            headline: Drafts
+            type: pages
+            layout: cardlets
+            status: draft
+            image:
+              cover: true
+              ratio: 16/9 
+            templates: article
 
   #Pages
   others:
     label: Others
     icon: dashboard
-    sections:
+    columns:
 
-      drafts:
-        headline: Drafts
-        type: pages
-        layout: list
-        status: draft
-        image:
-          cover: true
-          ratio: 16/9
+      other_published:
+        width: 2/3
+        sections:
+          other_published:
+            headline: Pages
+            type: pages
+            layout: cardlets
+            status: published
+            image:
+              cover: true
+              ratio: 16/9 
+            templates: 
+              - contact
+              - about
 
-        templates:
-          - article
-          - content
-          - contact
-          - about
-
-      public:
-        headline: Articles
-        type: pages
-        layout: cards
-        status: published
-        image:
-          cover: true
-          ratio: 16/9
-        templates: article
-
-      archived:
-        headline: Contact
-        type: pages
-        layout: cards
-        status: published
-        image:
-          cover: true
-          ratio: 16/9
-        templates:
-          - contact
+      other_drafts:
+        width: 1/3
+        sections:
+          other_drafts:
+            headline: Drafts
+            type: pages
+            layout: cardlets
+            status: draft
+            image:
+              cover: true
+              ratio: 16/9 
+            templates: 
+              - contact
+              - about
 
   settings:
     label: Configuration

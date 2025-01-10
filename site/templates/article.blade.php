@@ -9,6 +9,13 @@
                 </div>
                 <p class="text-xl mb-8">@kt($page->subtitle()->html())</p>
 
+                @foreach ($page->myBlocksField()->toBlocks() as $block)
+                <div id="{{ $block->id() }}" class="block block-type-{{ $block->type() }}">
+                    {!! $block !!}
+                </div>
+                @endforeach
+
+
                 @if($page->categories()->isNotEmpty())
                 <div class="flex space-x-4 mb-4">
                     @foreach($page->categories()->split() as $category)
