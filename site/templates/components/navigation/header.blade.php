@@ -1,4 +1,4 @@
-<header class="border-gray-100 shadow-lg text-white p-2 fixed top-0 left-0 right-0 z-10">
+<header class="border-gray-100 shadow-lg bg-white text-white p-2 fixed top-0 left-0 right-0  z-10 ">
     <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
             <a href="/" class="text-2xl font-bold text-black">

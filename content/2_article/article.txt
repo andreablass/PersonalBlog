@@ -36,12 +36,38 @@ Blocks:
     },
     {
         "content": {
-            "level": "h6",
-            "text": "<strong>Wear Comfortable Performance Clothing</strong>"
+            "level": "h5",
+            "text": "<strong>Keep a Practice/Performance Journal</strong>"
         },
         "id": "9649e809-b31f-4957-89fb-deb83139d988",
         "isHidden": false,
         "type": "heading"
+    },
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://ExGE5VmLAgKO2eD8"
+            ],
+            "src": "",
+            "alt": "",
+            "caption": "",
+            "link": "",
+            "ratio": "3/1",
+            "crop": "true"
+        },
+        "id": "58b549f7-6c61-4d6f-a81a-00fabb02909b",
+        "isHidden": false,
+        "type": "image"
+    },
+    {
+        "content": {
+            "text": "After you practice, take a few minutes to write down what went well about your practice and what you want to improve on in the future. Do the same thing after each performance. This will help you track your progress and create awareness about where you are headed next in your cello journey. In turn, you will feel a greater sense of control and less anxiety in general",
+            "citation": ""
+        },
+        "id": "73ed3195-9593-4643-90bd-c29125e054b4",
+        "isHidden": false,
+        "type": "quote"
     }
 ]
 
