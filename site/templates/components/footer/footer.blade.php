@@ -1,4 +1,4 @@
-<footer class="border-gray-100 shadow-lg  py-6 border-gray-100 shadow-lg">
+<footer class=" sticky border-gray-100 shadow-lg  py-6 border-gray-100 shadow-lg">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-center">
             <p>&copy; {{ date('Y') }} Andrea Blass. All rights reserved.</p>

@@ -11,7 +11,16 @@ Blocks:
 [
     {
         "content": {
-            "text": "<p><strong>Record A Video Performance and Listen to it with Critical Ears.</strong></p><p>Recording yourself playing and listening back with critical ears is one of the most powerful things you can do for yourself as a musician. When you are busy playing, you aren’t always focused on how you sound. You may be distracted by physical or mental concerns.</p><p>As you learn a piece, record parts of it and listen back. You can do this alone or with your teacher for more insights. When you are ready, record the whole piece wearing the clothes you are going to wear for your live performance.</p><p>You may need to record the piece multiple times until you are satisfied with the sound.</p>"
+            "level": "h2",
+            "text": "<strong>Record A Video Performance and Listen to it with Critical Ears.</strong>"
+        },
+        "id": "b62a5fe5-73cc-436f-a960-2f0b7beaba80",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p></p><p>Recording yourself playing and listening back with critical ears is one of the most powerful things you can do for yourself as a musician. When you are busy playing, you aren’t always focused on how you sound. You may be distracted by physical or mental concerns.</p><p>As you learn a piece, record parts of it and listen back. You can do this alone or with your teacher for more insights. When you are ready, record the whole piece wearing the clothes you are going to wear for your live performance.</p><p>You may need to record the piece multiple times until you are satisfied with the sound.</p>"
         },
         "id": "1dcec233-fcc6-4d55-adb5-c9d0210cab9e",
         "isHidden": false,

@@ -12,10 +12,12 @@
 </head>
 
 <body>
-    <x-navigation.header title="Header" />
-    <main class="pt-16">
-        {{ $slot }}
-    </main>
-    <x-footer.footer title="Footer" />
+    <div class="min-h-screen flex flex-col">
+        <x-navigation.header title="Header" />
+        <main class="pt-16 flex-1 p-4">
+            {{ $slot }}
+        </main>
+        <x-footer.footer title="Footer" />
+    </div>
 </body>
 </html>

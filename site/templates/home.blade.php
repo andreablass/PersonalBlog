@@ -1,26 +1,37 @@
 <x-layout.default :site="$site" :page="$page">
-    <div class="grid grid-cols-1  md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
         <div class="md:col-span-2">
-            <section>
-                <h1 class="text-3xl font-bold text-gray-800">{{ $page->title() }}</h1>
-                <p class=" text-gray-600 mt-2">{{ $page->subtitle() }}</p>
-            </section>
-
             <section class="mt-8">
-                <h2 class="text-2xl font-semibold text-gray-700">Latest Blog Posts</h2>
-                <ul class="mt-4 space-y-4">
-                    <li class="border-b pb-4">
-                        <!-- articulos recientes -->
-                    </li>
-                </ul>
+                <x-prose>
+                    <h2 class="text-3xl font-semibold text-gray-700">Latest Blog Posts</h2>
+                    <ul class="mt-4 space-y-4">
+                        @foreach ($articles as $article)
+                        <a href="{{ $article->url() }}" class="no-underline flex w-full">
+                            <div class="flex-1">
+                                <div class="text-2xl font-bold mb-3">
+                                    {{ $article->title() }}
+                                </div>
+                                <div class="text-base font-serif text-gray-500">
+                                    {{ $article->subtitle() }}
+                                </div>
+                            </div>
+                            <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-32 h-28 object-cover shadow-md ml-6">
+                        </a>
+                        <hr class="border-t border-gray-200">
+                        @endforeach
+                    </ul>
+                </x-prose>
             </section>
         </div>
-
         <div>
             <section class="mb-8">
                 <h3 class="text-xl font-semibold text-gray-700">About the Blog</h3>
                 <p class="text-gray-600 mt-2">{{ $page->about_text() }}</p>
             </section>
+            <section class="mt-6">
+                <h4 class="text-lg font-semibold">Topics:</h4>
+            </section>
+
         </div>
     </div>
 </x-layout.default>

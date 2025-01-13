@@ -53,6 +53,7 @@ tabs:
             templates: 
               - contact
               - about
+              - home
 
       other_drafts:
         width: 1/3
