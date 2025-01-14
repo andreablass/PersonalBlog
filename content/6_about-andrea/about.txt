@@ -1,0 +1,29 @@
+Title: Who am I?
+
+----
+
+Subtitle: Hey there, I'm Andrea, a web developer, community lead and I ensure things run smoothly.
+
+----
+
+Content: Hey there, I'm Andrea, a web developer, community lead and I ensure things run smoothly.
+
+----
+
+Image: - file://o08RrV9jeHup8lUy
+
+----
+
+Social:
+
+- 
+  platform: Linkedin
+  url: >
+    https://www.linkedin.com/in/andrea-blass-3a63441b7/
+- 
+  platform: X
+  url: https://x.com/usrdeaba
+
+----
+
+Uuid: hcbIwjoRUDxJVZtX

@@ -1,4 +1,4 @@
-<x-layout.default :site="$site" :page="$page">
+<x-layout.default>
     <article class="flex flex-col justify-start items-center pt-5">
         <x-prose>
             <div class="w-full max-w-4xl mx-auto p-4">

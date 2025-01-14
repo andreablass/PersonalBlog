@@ -7,13 +7,12 @@ fields:
     required: true
 
   subtitle:
-    label: Subtitle
     type: text
-    required: false
+    required: true
 
   content:
-    label: Content
-    type: textarea
+    label: About
+    type: text
     required: true
     size: large
 

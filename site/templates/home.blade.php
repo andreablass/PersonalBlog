@@ -1,4 +1,4 @@
-<x-layout.default :site="$site" :page="$page">
+<x-layout.default>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
         <div class="md:col-span-2">
             <section class="mt-8">

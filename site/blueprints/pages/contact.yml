@@ -13,19 +13,4 @@ fields:
   email:
     label: Email
     type: email
-    
-  social:
-    label: Contact Me
-    type: structure
-    columns:
-      platform: true
-      url: true
-    fields:
-      platform:
-        label: Platform
-        type: text
-        width: 1/2
-      url:
-        label: URL
-        type: url
-        width: 1/2 
+   
