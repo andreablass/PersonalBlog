@@ -11,7 +11,10 @@
                     </div>
                     <div class="content-3">
                         <div class="flex items-center space-x-4 mb-4">
-                            <img src="resources/images/profile.jpg" class="w-12 h-12 rounded-full object-cover">
+                            <?php
+                            $abouttPage = page('about');
+                            ?>
+                            <img src="{{ $abouttPage->image()->url() }}" alt="Profile Picture" class="w-12 h-12 rounded-full object-cover">
                             <p class="text-gray-500">Andrea Blass Ene 8, 2025</p>
                         </div>
                     </div>
