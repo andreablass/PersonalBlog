@@ -23,15 +23,22 @@
                 </x-prose>
             </section>
         </div>
+
         <div>
             <section class="mb-8">
                 <h3 class="text-xl font-semibold text-gray-700">About the Blog</h3>
                 <p class="text-gray-600 mt-2">{{ $page->about_text() }}</p>
             </section>
             <section class="mt-6">
-                <h4 class="text-lg font-semibold">Topics:</h4>
+                <h4 class="text-lg font-semibold">Categories:</h4>
+                <div class="mt-2 flex flex-wrap gap-2">
+                    @foreach ($categories as $category)
+                    <a href="{{ $page->url() }}" class="inline-block bg-gray-100 text-sm text-gray-700 px-4 py-1 rounded-full border border-gray-300 hover:bg-gray-200 hover:text-black transition-all">
+                        {{ $category }}
+                    </a>
+                    @endforeach
+                </div>
             </section>
-
         </div>
     </div>
 </x-layout.default>

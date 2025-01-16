@@ -8,8 +8,16 @@ return function (App $kirby, $site) {
         ->listed()
         ->filterBy('template', 'article')
         ->flip();
+    // Filtrar por categoría si está definida
+    if ($category = get('category')) {
+        $articles = $articles->filterBy('categories', '=', $category, ',');
+    }
+    // Pasar categorías y artículos a la plantilla
+    $categories = $site->categories()->split(',');
+
     return [
-        'articles' => $articles
+        'articles' => $articles,
+        'categories' => $categories,
     ];
 };
 

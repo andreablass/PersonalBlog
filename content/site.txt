@@ -2,4 +2,4 @@ Title: Site Title
 
 ----
 
-Categories: Code, Tech, Healthy, Music
+Categories: Code, Tech, Healthy, Music, Programming

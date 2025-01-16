@@ -4,12 +4,8 @@
             <p>&copy; {{ date('Y') }} Andrea Blass. All rights reserved.</p>
         </div>
         <div class="flex space-x-6">
-            <a href="/about" class=" hover:text-gray-400">About Me</a>
-            <a href="/contact" class=" hover:text-gray-400">Contact</a>
-            {{--
-            <a href="{{ page('about')->url() }}" class="hover:text-gray-400">About Me</a>
-            <a href="{{ page('contact')->url() }}" class="hover:text-gray-400">Contact</a>
-            --}}
+            <a href="{{ page('about')->url() }}" class=" hover:text-gray-400">About Me</a>
+            <a href="{{ page('contact')->url() }}" class=" hover:text-gray-400">Contact</a>
         </div>
     </div>
 </footer>
