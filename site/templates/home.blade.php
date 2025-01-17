@@ -33,9 +33,9 @@
                 <h4 class="text-lg font-semibold">Categories:</h4>
                 <div class="mt-2 flex flex-wrap gap-2">
                     @foreach ($categories as $category)
-                    <a href="{{ $page->url() }}" class="inline-block bg-gray-100 text-sm text-gray-700 px-4 py-1 rounded-full border border-gray-300 hover:bg-gray-200 hover:text-black transition-all">
+                    <x-categoriesColors.category :href="$page->url() . '?category=' . urlencode($category)">
                         {{ $category }}
-                    </a>
+                    </x-categoriesColors.category>
                     @endforeach
                 </div>
             </section>

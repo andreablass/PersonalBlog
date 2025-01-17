@@ -29,7 +29,9 @@
                         @if($page->categories()->isNotEmpty())
                         <div class="flex space-x-4 mb-4">
                             @foreach($page->categories()->split() as $category)
-                            <span class="text-sm text-gray-600 bg-gray-100 px-4 py-2 rounded-full">{{ $category }}</span>
+                            <x-categoriesColors.category :href="$page->url() . '?category=' . urlencode($category)">
+                                {{ $category }}
+                            </x-categoriesColors.category>
                             @endforeach
                         </div>
                         @endif
