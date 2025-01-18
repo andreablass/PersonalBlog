@@ -6,6 +6,16 @@ fields:
     type: text
     required: true
 
+  name:
+    label: Name
+    type: text
+    required: true
+
+  published_at:
+    label: Published 
+    type: date
+    default: now
+
   subtitle:
     label: Subtitle
     type: text

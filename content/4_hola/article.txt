@@ -2,6 +2,14 @@ Title: Best Python GUI Libraries to Create Stunning User Interfaces
 
 ----
 
+Name: Andrea Blass
+
+----
+
+Published-at: 2025-01-17
+
+----
+
 Subtitle: Python is one of the most versatile programming languages, and its ability to develop graphical user interfaces (GUIs) has been a cornerstone of its widespread adoption. Whether you’re building a simple desktop application or a visually stunning, feature-rich app, Python offers a variety of GUI libraries to suit your needs.
 
 ----

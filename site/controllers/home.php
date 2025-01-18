@@ -10,7 +10,7 @@ return function (App $kirby, $site) {
         ->flip();
     // Filtrar por categoría si está definida
     if ($category = get('category')) {
-        $articles = $articles->filterBy('categories', '=', $category, ',');
+        $articles = $articles->filterBy('categories', '==', $category, ',');
     }
     // Pasar categorías y artículos a la plantilla
     $categories = $site->categories()->split(',');

@@ -11,7 +11,7 @@
                                 <div class="text-2xl font-bold mb-3">
                                     {{ $article->title() }}
                                 </div>
-                                <div class="text-base font-serif text-gray-500">
+                                <div class="font-thin font-inter text-gray-600">
                                     {{ $article->subtitle() }}
                                 </div>
                             </div>

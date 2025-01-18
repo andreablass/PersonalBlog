@@ -1,0 +1,70 @@
+Title: My 7 Income Sources With One AI Tool
+
+----
+
+Name: Andrea Blass
+
+----
+
+Published-at: 2025-01-17
+
+----
+
+Subtitle: This is my story. Something was lacking.
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://deJeHMHyMhbcUXVg"
+            ],
+            "src": "",
+            "alt": "",
+            "caption": "",
+            "link": "",
+            "ratio": "",
+            "crop": "false"
+        },
+        "id": "d44399f5-e902-4d5a-868d-82764b709dad",
+        "isHidden": false,
+        "type": "image"
+    },
+    {
+        "content": {
+            "text": "<p>I am not an Artist. And I am not planning to become one. But still, I make money through my art and this is how I do it!</p><p>A few years back I was looking for a business I can do from home. I have worked in the IT sector for a very long time. Have worked in various job roles. My favorite one was that of being in the Operation department. But you know what? Something was lacking.</p>"
+        },
+        "id": "c60c7141-5a32-4f79-b889-187d1cda3fef",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "level": "h3",
+            "text": "Why I left my 9–5 job?"
+        },
+        "id": "72d30864-a629-4fbf-aae8-60cced8eb018",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>chances are that some of you might still love your day job. And there is no problem with that. I am a person who loves to control or have something I can call my own.</p><p>Making someone else business is not what I have dreamed of.</p><p>All these years working in the tech sector giving them my 100% left me with an unsatisfied feeling. a feeling that anything can happen at any moment.</p><p>maybe I will be fired one day. This is the deadliest dream any tech person can ever think of!</p>"
+        },
+        "id": "a2b7467e-a396-4f81-a0c5-954d5304bfe0",
+        "isHidden": false,
+        "type": "text"
+    }
+]
+
+----
+
+Categories: Healthy, Programming
+
+----
+
+Uuid: stjYSSQloVeSQ5vm

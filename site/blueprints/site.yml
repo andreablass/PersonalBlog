@@ -1,12 +1,10 @@
 title: Site
 tabs:
-
   #Pages
   articles:
     label: Articles
     icon: dashboard
     columns:
-
       published:
         width: 2/3
         sections:
@@ -17,7 +15,7 @@ tabs:
             status: published
             image:
               cover: true
-              ratio: 16/9 
+              ratio: 16/9
             templates: article
 
       articles_drafts:
@@ -30,7 +28,7 @@ tabs:
             status: draft
             image:
               cover: true
-              ratio: 16/9 
+              ratio: 16/9
             templates: article
 
   #Pages
@@ -38,7 +36,6 @@ tabs:
     label: Others
     icon: dashboard
     columns:
-
       other_published:
         width: 2/3
         sections:
@@ -49,8 +46,8 @@ tabs:
             status: published
             image:
               cover: true
-              ratio: 16/9 
-            templates: 
+              ratio: 16/9
+            templates:
               - contact
               - about
               - home
@@ -65,8 +62,8 @@ tabs:
             status: draft
             image:
               cover: true
-              ratio: 16/9 
-            templates: 
+              ratio: 16/9
+            templates:
               - contact
               - about
 
@@ -82,10 +79,13 @@ tabs:
             label: Categories
             type: tags
 
+          footer:
+            label: Footer Pages
+            type: pages
+
       sidebar:
         sticky: true
         width: 1/3
         sections:
           files:
             type: files
-

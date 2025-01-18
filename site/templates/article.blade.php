@@ -6,16 +6,14 @@
                     <div class="content-1 ">
                         <h1 class="text-4xl font-bold mb-8">@kt($page->title())</h1>
                     </div>
-                    <div class="content-2 font-serif text-gray-500">
+                    <div class="content-2 font-Inter font-thin text-gray-600">
                         <p class="text-xl mb-8">@kt($page->subtitle()->html())</p>
                     </div>
                     <div class="content-3">
                         <div class="flex items-center space-x-4 mb-4">
-                            <?php
-                            $abouttPage = page('about');
-                            ?>
-                            <img src="{{ $abouttPage->image()->url() }}" alt="Profile Picture" class="w-12 h-12 rounded-full object-cover">
-                            <p class="text-gray-500">Andrea Blass Ene 8, 2025</p>
+                            <img src="{{ $about->image()->url() }}" alt="Profile Picture" class="w-12 h-12 rounded-full object-cover">
+                            <p class="text-gray-600 font-Poppins font-extralight">@kt($page->name()->html())</p>
+                            <p class="text-gray-500 font-Poppins  font-extralight">{{ $formattedDate }}</p>
                         </div>
                     </div>
                     <div class="content-4 mb-14">
