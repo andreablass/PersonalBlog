@@ -15,9 +15,13 @@ return function (App $kirby, $site) {
     // Pasar categorías y artículos a la plantilla
     $categories = $site->categories()->split(',');
 
+    // create a shortcut for pagination
+    $pagination = $articles->paginate(5);
+
     return [
         'articles' => $articles,
         'categories' => $categories,
+        'pagination' => $pagination
     ];
 };
 
