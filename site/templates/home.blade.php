@@ -41,6 +41,7 @@
             </section>
         </div>
 
+
         <nav class="pagination text-gray-700 flex justify-between fixed bottom-0 left-0 w-full bg-white p-4 shadow-lg">
             @if ($pagination->hasPrevPage())
             <a href="{{ $pagination->prevPageUrl() }}" aria-label="Previous articles" class="text-black-500 hover:underline">
@@ -54,7 +55,5 @@
             </a>
             @endif
         </nav>
-
-
     </div>
 </x-layout.default>

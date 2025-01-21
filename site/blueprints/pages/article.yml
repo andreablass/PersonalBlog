@@ -7,7 +7,7 @@ fields:
     required: true
 
   name:
-    label: Name
+    label: Author name
     type: text
     required: true
 
