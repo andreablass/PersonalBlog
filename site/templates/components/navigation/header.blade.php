@@ -16,10 +16,6 @@
                     </button>
                 </form>
 
-                {{-- <form {{--action="{{ $page->url()  }}" method="get" class="relative flex items-center px-4 py-2 rounded-full bg-gray-100 border-0">
-                <k-icon type="search" class="w-6 h-6 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></k-icon>
-                <input type="text" name="q" placeholder="Search..." class="px-4 py-2 border rounded pl-10">
-                <button type="submit" class="hidden">Search</button> --}}
             </div>
         </div>
     </div>
