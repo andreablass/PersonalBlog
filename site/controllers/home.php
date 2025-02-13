@@ -16,12 +16,12 @@ return function (App $kirby, $site) {
     $categories = $site->categories()->split(',');
 
     // create a shortcut for pagination
-    $pagination = $articles->paginate(5);
+    $articles = $articles->paginate(3);
 
     return [
         'articles' => $articles,
         'categories' => $categories,
-        'pagination' => $pagination
+        'pagination' => $articles->pagination(),
     ];
 };
 

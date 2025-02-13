@@ -2,7 +2,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
         <div class="md:col-span-2">
             <section class="mt-8">
-                <x-prose>
+                <x-prose class="max-w-none">
                     <h2 class="text-3xl font-semibold text-gray-700">Latest Blog Posts</h2>
                     <ul class="mt-4 space-y-4">
                         @foreach ($articles as $article)
@@ -41,19 +41,28 @@
             </section>
         </div>
 
-
-        <nav class="pagination text-gray-700 flex justify-between fixed bottom-0 left-0 w-full bg-white p-4 shadow-lg">
+        @if ($pagination->hasPages())
+        <nav class="text-gray-700 flex justify-between w-full bg-white p-4 md:col-span-2">
             @if ($pagination->hasPrevPage())
             <a href="{{ $pagination->prevPageUrl() }}" aria-label="Previous articles" class="text-black-500 hover:underline">
                 &larr; Previous articles
             </a>
+            @else
+            <span class="cursor-not-allowed text-gray-300" aria-hidden="true">
+                &larr; Previous articles
+            </span>
             @endif
 
             @if ($pagination->hasNextPage())
             <a href="{{ $pagination->nextPageUrl() }}" aria-label="Next articles" class="text-black-500 hover:underline">
                 Next articles &rarr;
             </a>
+            @else
+            <span class="cursor-not-allowed text-gray-300" aria-hidden="true">
+                Next articles &rarr;
+            </span>
             @endif
         </nav>
+        @endif
     </div>
 </x-layout.default>
