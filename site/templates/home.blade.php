@@ -44,7 +44,7 @@
         @if ($pagination->hasPages())
         <nav class="text-gray-700 flex justify-between w-full bg-white p-4 md:col-span-2">
             @if ($pagination->hasPrevPage())
-            <a href="{{ $pagination->prevPageUrl() }}" aria-label="Previous articles" class="text-black-500 hover:underline">
+            <a href="{{ $pagination->prevPageUrl() }}" aria-label="Previous articles" class="text-black-500 no-underline">
                 &larr; Previous articles
             </a>
             @else
@@ -54,7 +54,7 @@
             @endif
 
             @if ($pagination->hasNextPage())
-            <a href="{{ $pagination->nextPageUrl() }}" aria-label="Next articles" class="text-black-500 hover:underline">
+            <a href="{{ $pagination->nextPageUrl() }}" aria-label="Next articles" class="text-black-500 no-underline">
                 Next articles &rarr;
             </a>
             @else

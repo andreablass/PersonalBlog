@@ -82,6 +82,13 @@ tabs:
           footer:
             label: Footer Pages
             type: pages
+          
+          pagination:
+            label: Pagination number
+            type: number
+            min: 1
+            max: 20
+            default: 3
 
       sidebar:
         sticky: true

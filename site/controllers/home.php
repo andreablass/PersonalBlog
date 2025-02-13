@@ -2,6 +2,9 @@
 use Kirby\Cms\App;
 
 return function (App $kirby, $site) {
+
+    $paginationNumber = $site->pagination()->toInt() ?: 3; 
+
     // Get all articles
     $articles = $site
         ->children()
@@ -16,7 +19,7 @@ return function (App $kirby, $site) {
     $categories = $site->categories()->split(',');
 
     // create a shortcut for pagination
-    $articles = $articles->paginate(3);
+    $articles = $articles->paginate($paginationNumber);
 
     return [
         'articles' => $articles,
