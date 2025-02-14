@@ -1,12 +1,12 @@
 <x-layout.default>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ml-20 mr-20 mt-10">
-        <div class="md:col-span-2">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-10 md:px-20 mt-10">
+        <div class="md:col-span-2 w-full">
             <section class="mt-8">
                 <x-prose class="max-w-none">
                     <h2 class="text-3xl font-semibold text-gray-700">Latest Blog Posts</h2>
                     <ul class="mt-4 space-y-4">
                         @foreach ($articles as $article)
-                        <a href="{{ $article->url() }}" class="no-underline flex w-full">
+                        <a href="{{ $article->url() }}" class="no-underline flex flex-col sm:flex-row w-full">
                             <div class="flex-1">
                                 <div class="text-2xl font-bold mb-3">
                                     {{ $article->title() }}
@@ -15,7 +15,7 @@
                                     {{ $article->subtitle() }}
                                 </div>
                             </div>
-                            <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-32 h-28 object-cover shadow-md ml-6">
+                            <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-full sm:w-32 sm:h-28 object-cover shadow-md sm:ml-6 mt-3 sm:mt-0">
                         </a>
                         <hr class="border-t border-gray-200">
                         @endforeach
@@ -24,7 +24,7 @@
             </section>
         </div>
 
-        <div>
+        <div class="md:col-span-1">
             <section class="mb-8">
                 <h3 class="text-xl font-semibold text-gray-700">About the Blog</h3>
                 <p class="text-gray-600 mt-2">{{ $page->about_text() }}</p>
@@ -42,7 +42,7 @@
         </div>
 
         @if ($pagination->hasPages())
-        <nav class="text-gray-700 flex justify-between w-full bg-white p-4 md:col-span-2">
+        <nav class="text-gray-700 flex flex-wrap justify-center md:justify-between w-full bg-white p-4 md:col-span-2 gap-4">
             @if ($pagination->hasPrevPage())
             <a href="{{ $pagination->prevPageUrl() }}" aria-label="Previous articles" class="text-black-500 no-underline">
                 &larr; Previous articles
