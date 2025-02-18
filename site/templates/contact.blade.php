@@ -1,8 +1,8 @@
 <x-layout.default>
-    <div class="p-4 text-center font-semibold flex items-center justify-center min-h-screen">
-        <div class="w-full max-w-lg">
+    <div class="p-4 text-center font-semibold flex items-center justify-center min-h-screen w-full">
+        <div class=" max-w-lg">
             <section class="text-black">
-                <h2 class="text-3xl font-semibold text-gray-700 pt-16 text-center p-10">Contact me</h2>
+                <h2 class="text-5xl font-semibold font-serif text-gray-700 pt-16 text-center p-10">Contact me</h2>
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-around text-center pt-6 space-y-6 sm:space-y-0 sm:space-x-8 text-gray-500">
                     <!-- Address -->
                     <div class="flex items-center space-x-2">

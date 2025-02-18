@@ -3,26 +3,31 @@
         <h1 class="text-2xl font-bold mb-4 text-gray-500">Search Results for "{{ $query }}"</h1>
 
         @if ($results->isEmpty())
-        <p>No results found.</p>
+            <p>No results found.</p>
         @else
-        <x-prose>
-            <ul class="mt-4 space-y-4">
-                @foreach ($results as $article)
-                <a href="{{ $article->url() }}" class="no-underline flex w-full">
-                    <div class="flex-1">
-                        <div class="text-2xl font-bold mb-3">
-                            {{ $article->title() }}
-                        </div>
-                        <div class="font-thin font-inter text-gray-600">
-                            {{ $article->subtitle() }}
-                        </div>
-                    </div>
-                    <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-32 h-28 object-cover shadow-md ml-6">
-                </a>
-                <hr class="border-t border-gray-200">
-                @endforeach
-            </ul>
-        </x-prose>
+            <x-prose>
+                <ul class="mt-4 space-y-4">
+                    @foreach ($results as $article)
+                        @php
+                            $highlightedTitle = preg_replace("/($query)/i", '<span class="underline decoration-pink-400 decoration-4">$1</span>', $article->title());
+                            $highlightedSubtitle = preg_replace("/($query)/i", '<span class="underline decoration-pink-400 decoration-2">$1</span>', $article->subtitle());
+                        @endphp
+
+                        <a href="{{ $article->url() }}" class="no-underline flex w-full">
+                            <div class="flex-1">
+                                <div class="text-2xl font-bold mb-3">
+                                    {!! $highlightedTitle !!}
+                                </div>
+                                <div class="font-thin font-inter text-gray-600">
+                                    {!! $highlightedSubtitle !!}
+                                </div>
+                            </div>
+                            <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-32 h-28 object-cover shadow-md ml-6">
+                        </a>
+                        <hr class="border-t border-gray-200">
+                    @endforeach
+                </ul>
+            </x-prose>
         @endif
     </div>
 </x-layout.default>
