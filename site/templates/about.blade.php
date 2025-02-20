@@ -10,9 +10,9 @@
                 @foreach ($page->social()->toStructure() as $social)
                 <a href="{{ $social->url() }}" class="social-icon">
                     @if (in_array(strtolower($social->platform()), ['linkedin']))
-                    <img src="resources/images/linkedin.png" alt="LinkedIn Icon" class="w-8 h-8 object-cover rounded shadow-lg">
+                    <img src="public/images/linkedin.png" alt="LinkedIn Icon" class="w-8 h-8 object-cover rounded shadow-lg">
                     @elseif (in_array(strtolower($social->platform()), ['twitter', 'x']))
-                    <img src="resources/images/x.png" alt="Twitter Icon" class="w-8 h-8 object-cover rounded shadow-lg">
+                    <img src="public/images/x.png" alt="Twitter Icon" class="w-8 h-8 object-cover rounded shadow-lg">
                     @endif
                 </a>
                 @endforeach

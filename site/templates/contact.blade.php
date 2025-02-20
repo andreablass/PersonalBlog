@@ -1,5 +1,5 @@
 <x-layout.default>
-    <div class="p-4 text-center font-semibold flex items-center justify-center min-h-screen w-full">
+    <div class="p-4 text-center font-semibold flex items-center justify-center ">
         <div class=" max-w-lg">
             <section class="text-black">
                 <h2 class="text-5xl font-semibold font-serif text-gray-700 pt-16 text-center p-10">Contact me</h2>

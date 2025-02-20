@@ -85,7 +85,7 @@ tabs:
           
           pagination:
             label: Pagination number
-            type: number
+            type: range
             min: 1
             max: 20
             default: 3
