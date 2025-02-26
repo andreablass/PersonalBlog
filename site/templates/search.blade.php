@@ -20,6 +20,7 @@
                         </div>
                         <div class="font-thin font-inter text-gray-600">
                             {!! $highlightedSubtitle !!}
+                            {{ $article->greatings() }}
                         </div>
                     </div>
                     @empty(!$article->image())

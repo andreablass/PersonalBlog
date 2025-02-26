@@ -12,7 +12,7 @@
                                     {{ $article->title() }}
                                 </div>
                                 <div class="font-thin font-inter text-gray-600">
-                                    {{ $article->subtitle() }}
+                                    {{ $article->abstract() }}
                                 </div>
                             </div>
                             <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="w-full sm:w-32 sm:h-28 object-cover shadow-md sm:ml-6 mt-3 sm:mt-0">

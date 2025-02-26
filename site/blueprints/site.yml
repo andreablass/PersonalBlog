@@ -13,6 +13,7 @@ tabs:
             type: pages
             layout: cards
             status: published
+            flip: true
             image:
               cover: true
               ratio: 16/9
