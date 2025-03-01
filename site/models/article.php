@@ -12,7 +12,7 @@ class ArticlePage extends Page
 
         return match(true) {
             !empty($abstract) => $abstract,
-            $this->subtitle()->isNoEmpty() => $this->subtitle(),
+            $this->subtitle()->isNotEmpty() => $this->subtitle(),
             default => $this->title(),
         };
     }

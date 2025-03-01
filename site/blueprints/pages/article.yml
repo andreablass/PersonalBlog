@@ -20,6 +20,13 @@ fields:
     label: Subtitle
     type: text
     required: true
+
+  cover_image:
+    label: Cover image
+    type: files
+    required: true
+    multiple: false
+    accept: image/*
     
   blocks:
     type: blocks
