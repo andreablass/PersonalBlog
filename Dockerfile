@@ -1,11 +1,9 @@
 FROM php:7.4-apache
 
-# Actualizar los repositorios
+# Actualizar los repositorios e instalar software-properties-common
 RUN apt-get update -y && \
-    apt-get install -y software-properties-common
-
-# Agregar repositorios adicionales
-RUN add-apt-repository universe && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository universe && \
     apt-get update -y
 
 # Instalar las dependencias necesarias
