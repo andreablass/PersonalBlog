@@ -1,7 +1,13 @@
 FROM php:7.4-apache
 
-# Actualizar los repositorios y limpiar cachés antes de instalar dependencias
-RUN apt-get clean && apt-get update -y && apt-get install -y \
+# Habilitar repositorios adicionales (universe) para dependencias
+RUN apt-get update -y && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository universe && \
+    apt-get update -y
+
+# Instalar dependencias necesarias
+RUN apt-get install -y \
     libmysqlclient-dev \
     libonig-dev \
     && docker-php-ext-install pdo pdo_mysql mbstring
@@ -21,5 +27,4 @@ EXPOSE 80
 
 # Comando para iniciar Apache
 CMD ["apache2-foreground"]
-
 
