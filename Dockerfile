@@ -1,17 +1,17 @@
-# Imagen base con PHP y Apache
-FROM php:8.2-apache
+FROM php:7.4-apache
 
-# Instalar extensiones necesarias
-RUN docker-php-ext-install pdo pdo_mysql mbstring
+# Instalar dependencias del sistema
+RUN apt-get update && apt-get install -y \
+    libmysqlclient-dev \
+    libonig-dev \
+    && docker-php-ext-install pdo pdo_mysql mbstring
 
-# Copiar archivos de Kirby
+# Copiar tu aplicación al contenedor
 COPY . /var/www/html/
 
-# Configurar permisos
-RUN chown -R www-data:www-data /var/www/html
+# Habilitar el módulo de Apache para permitir .htaccess (si es necesario)
+RUN a2enmod rewrite
 
-# Exponer el puerto de Apache
+# Exponer el puerto 80
 EXPOSE 80
 
-# Ejecutar Apache en primer plano
-CMD ["apache2-foreground"]
