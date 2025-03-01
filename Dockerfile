@@ -1,17 +1,25 @@
 FROM php:7.4-apache
 
-# Instalar dependencias del sistema
-RUN apt-get update && apt-get install -y \
+# Actualizar los repositorios y limpiar cachés antes de instalar dependencias
+RUN apt-get clean && apt-get update -y && apt-get install -y \
     libmysqlclient-dev \
     libonig-dev \
     && docker-php-ext-install pdo pdo_mysql mbstring
 
-# Copiar tu aplicación al contenedor
+# Habilitar la reescritura de URL de Apache
+RUN a2enmod rewrite
+
+# Copiar archivos del proyecto
 COPY . /var/www/html/
 
-# Habilitar el módulo de Apache para permitir .htaccess (si es necesario)
-RUN a2enmod rewrite
+# Establecer permisos adecuados para los archivos
+RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 755 /var/www/html
 
 # Exponer el puerto 80
 EXPOSE 80
+
+# Comando para iniciar Apache
+CMD ["apache2-foreground"]
+
 
