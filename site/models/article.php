@@ -34,4 +34,14 @@ class ArticlePage extends Page
 
         return Str::excerpt($text);
     }
+
+    public function coverImage(): null|string
+    {
+        // Accede al campo 'cover_image' y obtiene el primer archivo
+        $file = $this->cover_image()->toFile();
+
+        // Si existe un archivo y es una imagen, devuelve su URL
+        return $file && $file->isImage() ? $file->url() : null;
+    
+    }
 }

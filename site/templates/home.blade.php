@@ -15,7 +15,7 @@
                                     {{ $article->abstract() }}
                                 </div>
                             </div>
-                            <img src="{{ $article->coverImage() }}">
+                            <img src="{{ $article->coverImage() ?? ' ' }}" class="ml-6 h-28 w-32 object-cover shadow-md">
                         </a>
                         <hr class="border-t border-gray-200">
                         @endforeach

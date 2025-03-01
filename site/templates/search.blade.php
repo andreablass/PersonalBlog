@@ -19,17 +19,10 @@
                             {!! $highlightedTitle !!}
                         </div>
                         <div class="font-thin font-inter text-gray-600">
-                            {!! $highlightedSubtitle !!}
-                            {{ $article->greatings() }}
+                            {{ $article->abstract() }}
                         </div>
                     </div>
-                    @empty(!$article->image())
-                    <img src="{{ $article->image()->url() }}" alt="{{ $article->title() }}" class="ml-6 h-28 w-32 object-cover shadow-md">
-                    @else
-                    <span class="ml-6 flex h-28 w-32 items-center justify-center bg-gray-200 text-gray-400 shadow-md" aria-hidden="true">
-                        No image
-                    </span>
-                    @endempty
+                    <img src="{{ $article->coverImage() }}" alt="{{ $article->title() }}" class="ml-6 h-28 w-32 object-cover shadow-md">
                 </a>
                 <hr class="border-t border-gray-200">
                 @endforeach
