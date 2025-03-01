@@ -1,12 +1,14 @@
 FROM php:7.4-apache
 
-# Habilitar repositorios adicionales (universe) para dependencias
+# Actualizar los repositorios
 RUN apt-get update -y && \
-    apt-get install -y software-properties-common && \
-    add-apt-repository universe && \
+    apt-get install -y software-properties-common
+
+# Agregar repositorios adicionales
+RUN add-apt-repository universe && \
     apt-get update -y
 
-# Instalar dependencias necesarias
+# Instalar las dependencias necesarias
 RUN apt-get install -y \
     libmysqlclient-dev \
     libonig-dev \
@@ -27,4 +29,3 @@ EXPOSE 80
 
 # Comando para iniciar Apache
 CMD ["apache2-foreground"]
-
