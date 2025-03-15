@@ -36,21 +36,6 @@ return [
     }
   ],
   [
-    'pattern' => '/second',
-    'method' => 'get',
-    'action' => function () {
-      return Page::factory([
-        'slug' => 'second',
-        'template' => 'search',
-        'content' => [
-          'title' => 'Andrea\'s search information',
-          'subtitle' => 'Andrea\'s search information',
-          'published_at' => '2025-03-11',
-        ]
-      ]);
-    }
-  ],
-  [
     'pattern' => '/andrea/url/(:any)',
     'method' => 'get',
     'action' => function () {
