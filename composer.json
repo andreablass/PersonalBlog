@@ -22,12 +22,16 @@
         "getkirby/cms": "^4.0",
         "beebmx/kirby-env": "^4.0",
         "beebmx/kirby-blade": "^6.0",
-        "beebmx/kirby-courier": "^1.0"
+        "beebmx/kirby-courier": "^1.0",
+        "brd6/notion-sdk-php": "^1.5",
+        "symfony/http-client": "^7.2",
+        "nyholm/psr7": "^1.8"
     },
     "config": {
         "optimize-autoloader": true,
         "allow-plugins": {
-            "getkirby/composer-installer": true
+            "getkirby/composer-installer": true,
+            "php-http/discovery": true
         }
     }
 }
