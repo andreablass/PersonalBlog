@@ -14,7 +14,6 @@ Icon
 # Vite Build files
 # ---------------
 
-/public/build
 /public/hot
 
 # Temporary files
