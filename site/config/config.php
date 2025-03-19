@@ -11,7 +11,7 @@ KirbyEnv::load($base);
 return [
     'debug' => env('KIRBY_DEBUG', false),
     'panel' => [
-        'install' => env('KIRBY_INSTALL', true),
+        'install' => env('KIRBY_INSTALL', false),
         'slug' => env('KIRBY_PANEL', 'panel')
     ],
     'session' => [
