@@ -6,9 +6,8 @@
                 $aboutPage = page('about');
                 $image = $aboutPage?->image();
                 @endphp
-
                 @if($image)
-                <img src="{{ $image->url() }}" alt="Profile Picture" class="w-12 h-12 rounded-full object-cover">
+                <img src="{{ $image->url() }}" alt="Profile Picture" class="w-14 h-14 rounded-full object-cover">
                 @endif
             </a>
         </div>
