@@ -67,7 +67,7 @@ tabs:
             templates:
               - contact
               - about
-
+              
   settings:
     label: Configuration
     icon: settings

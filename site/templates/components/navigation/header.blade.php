@@ -2,7 +2,14 @@
     <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
             <a href="/" class="text-2xl font-bold text-black">
-                Andrea
+                @php
+                $aboutPage = page('about');
+                $image = $aboutPage?->image();
+                @endphp
+
+                @if($image)
+                <img src="{{ $image->url() }}" alt="Profile Picture" class="w-12 h-12 rounded-full object-cover">
+                @endif
             </a>
         </div>
         <div class="flex items-center space-x-4">
