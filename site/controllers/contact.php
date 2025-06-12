@@ -7,7 +7,17 @@ return function (App $kirby, $page) {
             'name' => get('name'),
             'email' => get('email'),
             'comments' => get('comments'),
+            'phone' => get('phone'), // honeypot
         ];
+
+        // Validar honeypot: si tiene contenido, es spam
+        if (!empty($data['phone'])) {
+            // Puedes simplemente no procesar ni enviar nada
+            return [
+                'errors' => ['honeypot' => 'Spam detected.'],
+                'data' => $data,
+            ];
+        }
 
         $validations = [
             'name' => ['required', 'minLength' => 3],
@@ -24,24 +34,27 @@ return function (App $kirby, $page) {
         if ($errors = invalid($data, $validations, $messages)) {
             return [
                 'errors' => $errors,
-                'data' => $data, // Se devuelven los datos que el usuario introduce
+                'data' => $data,
             ];
         }
 
         try {
             $kirby->email([
-                'from' => get('email'),
+                'from' => $data['email'],
                 'to' => 'andrea@gmail.com',
-                'subject' => 'New contact message from: ' . get('name'),
-                'body' => "Nombre: " . get('name') . "\nCorreo: " . get('email') . "\nComentarios: " . get('comments'),
+                'subject' => 'New contact message from: ' . $data['name'],
+                'body' => "Nombre: " . $data['name'] . "\nCorreo: " . $data['email'] . "\nComentarios: " . $data['comments'],
             ]);
         } catch (Exception $error) {
-            echo $error;
+            return [
+                'errors' => ['email' => 'Failed to send email. Please try again later.'],
+                'data' => $data,
+            ];
         }
 
         return [
             'success' => true,
-            'message' => 'Your message has been send successfully',
+            'message' => 'Your message has been sent successfully',
         ];
     }
 };

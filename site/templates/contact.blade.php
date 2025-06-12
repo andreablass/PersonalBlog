@@ -38,6 +38,7 @@
                 <label>
                     <span class="sr-only">Email</span>
                     <input type="email" name="email" class="w-full rounded border border-gray-200 p-2" placeholder="Email *" required x-model="email" value="{{ $data['email'] ?? '' }}">
+                    <input type="text" name="phone" style="display:none" tabindex="-1" autocomplete="off" value="">
                 </label>
                 <label>
                     <span class="sr-only">Comments</span>
