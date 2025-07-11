@@ -2,14 +2,14 @@
 
 Blog personal construido con [Kirby CMS](https://getkirby.com/), un CMS de archivos plano basado en PHP, que permite crear y administrar contenido de manera sencilla y flexible.
 
-## 🚀 Tecnologías usadas
+## Tecnologías usadas
 
 - PHP 8.x  
 - [Kirby CMS](https://getkirby.com/)  
 - Tailwind CSS para estilos  
 - Blade como motor de plantillas  
 
-## 🎯 Características
+## Características
 
 - Administración de contenido mediante el panel de Kirby  
 - Diseño responsive y limpio con Tailwind CSS  
@@ -17,7 +17,7 @@ Blog personal construido con [Kirby CMS](https://getkirby.com/), un CMS de archi
 - Fácil personalización y extensión  
 - Blog orientado a publicación personal y profesional  
 
-## ⚙️ Instalación y uso
+## Instalación y uso
 
 1. Clona el repositorio:  
    git clone https://github.com/andreablass/PersonalBlog.git
@@ -45,6 +45,6 @@ Search
 ![Site Title _ buscador](https://github.com/user-attachments/assets/950ba514-e28b-4d39-91fa-d35eda528dce)
 
 
-📄 Licencia
+Licencia
 MIT License © Andrea Blass
 
