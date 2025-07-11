@@ -1,92 +1,46 @@
-# Quick Start
-
-```sh
-$ git clone git@github.com:beebmx/kirby-starterkit.git
-$ cd kirby-starterkit
-$ touch .env
-$ composer install
-```
-
-# Kirby Starterkit
-
-Kirby is a file-based CMS.
-Easy to setup. Easy to use. Flexible as hell.
-
-## Trial
-
-You can try Kirby on your local machine or on a test
-server as long as you need to make sure it is the right
-tool for your next project.
-
-## Buy a license
-
-You can purchase your Kirby license at
-<https://getkirby.com/buy>
-
-A Kirby license is valid for a single domain. You can find
-Kirby's license agreement here: <https://getkirby.com/license>
-
-## The Plainkit
-
-Kirby's Plainkit is the most minimal setup you can get started with.
-It does not include any content, styles or other kinds of decoration,
-so it's perfect to use this as a starting point for your own project.
-
-## The Panel
-
-You can find the login for Kirby's admin interface at
-http://yourdomain.com/panel. You will be guided through the signup
-process for your first user, when you visit the panel
-for the first time.
-
-## Installation
-
-Kirby does not require a database, which makes it very easy to
-install. Just copy Kirby's files to your server and visit the
-URL for your website in the browser.
-
-**Please check if the invisible .htaccess file has been
-copied to your server correctly**
-
-### Requirements
-
-Kirby runs on PHP 7.1+, Apache or Nginx.
-
-### Download
-
-You can download the latest version of the Starterkit
-from https://download.getkirby.com
-
-### With Git
-
-If you are familiar with Git, you can clone Kirby's
-Starterkit repository from Github.
-
-    git clone https://github.com/getkirby/starterkit.git
-
-## Documentation
-
-<https://getkirby.com/docs>
-
-## Issues
-
-If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
-
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
-
-## Copyright
-
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>
 # PersonalBlog
+
+Blog personal construido con [Kirby CMS](https://getkirby.com/), un CMS de archivos plano basado en PHP, que permite crear y administrar contenido de manera sencilla y flexible.
+
+## 🚀 Tecnologías usadas
+
+- PHP 8.x  
+- [Kirby CMS](https://getkirby.com/)  
+- Tailwind CSS para estilos  
+- Blade como motor de plantillas  
+
+## 🎯 Características
+
+- Administración de contenido mediante el panel de Kirby  
+- Diseño responsive y limpio con Tailwind CSS  
+- Plantillas Blade para una estructura modular y reutilizable  
+- Fácil personalización y extensión  
+- Blog orientado a publicación personal y profesional  
+
+## ⚙️ Instalación y uso
+
+1. Clona el repositorio:  
+   ```bash
+   git clone https://github.com/andreablass/PersonalBlog.git
+   cd PersonalBlog
+Instala dependencias PHP usando Composer:
+
+bash
+Copy
+Edit
+composer install
+Configura tu servidor web (Apache, Nginx) para apuntar a la carpeta public como raíz pública.
+
+Accede al panel de administración de Kirby en /panel para crear y gestionar contenido.
+
+Para desarrollo local puedes usar el servidor PHP integrado:
+
+bash
+Copy
+Edit
+php -S localhost:8000 -t public
+y abrir http://localhost:8000
+
+📄 Licencia
+MIT License © Andrea Blass
+
